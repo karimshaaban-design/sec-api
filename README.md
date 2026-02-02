@@ -218,3 +218,9 @@ elif response.status_code == 429:
 [![Contact Us on WhatsApp about SEC API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20a%20question%20about%20the%20SEC%20API.)
 
 [![Contact Us on Email about SEC API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=SEC%20API%20Question)
+
+### ❓ Love It? Star It ⭐!
+
+If this tool has been helpful, please give us a **star ⭐** on GitHub.
+
+![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
