@@ -219,8 +219,6 @@ elif response.status_code == 429:
 
 [![Contact Us on Email about SEC API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=SEC%20API%20Question)
 
-### ❓ Love It? Star It ⭐!
+## [Love It? Star It ⭐!](https://github.com/omkarcloud/sec-api/stargazers)
 
-If this tool has been helpful, please give us a **star ⭐** on GitHub.
-
-![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)
+If this tool has been helpful, please give us a [**star ⭐** on GitHub.](https://github.com/omkarcloud/sec-api/stargazers)
